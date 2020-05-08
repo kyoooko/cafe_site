@@ -1,0 +1,428 @@
+@charset "UTF-8";
+/*========= base ===========*/
+
+html{
+  margin:0;
+  padding:0;
+}
+body{
+  margin: 0;
+  padding:0;
+
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+  /* American Typewriter,Campignon,Shimanami, */
+
+  font-weight: 500;
+  color: #333;
+  line-height:2.0;
+}
+h2,h3,h4,h5{
+  margin: 0;
+  padding:0;
+}
+img{
+  width:100%;
+  vertical-align:bottom;
+}
+ul,li,dl,dt,dd {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:#000;
+}
+a:hover{
+  transition:.3s;
+  opacity:0.6;
+}
+section{
+  margin-bottom:120px;
+}
+.content-wrapper{
+  width: 1400px;
+  margin:0 auto;
+}
+
+/*========= ここから===========*/
+/*========= header===========*/
+header{
+  width:100%;
+  /* background-color: pink; */
+}
+.header-nav{
+  height:100px;
+  display:flex;
+  justify-content: space-between;
+  align-items :center;
+}
+header nav ul{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li{
+  margin-right:50px;
+}
+header h1{
+  /* font-family:Champignon,Snell Roundhand,sans-serif;
+  font-size: 3rem; */
+  font-family:Snell Roundhand,sans-serif;
+}
+header h1 span{
+  font-family:Champignon,Snell Roundhand,sans-serif;
+  font-size: 3rem;
+
+}
+
+/*=========セクション①メインビジュアル===========*/
+.mainvisual{
+  position:relative;
+  height:600px;
+  /* background-color: aqua; */
+}
+.mainvisual img{
+  width:70%;
+  height:500px;
+  margin-left: 30%;
+  object-fit: cover;
+}
+.mainvisual h2{
+  position: absolute;
+  top:30%;
+  left:20%;
+  background-color: rgba(255,255,255,0.6);
+  font-size: 30px;
+  padding:2rem 4rem;
+  letter-spacing: 1.5rem;
+  font-family: Shimanami,sans-serif;
+}
+.bg1{
+  /* background-color: #e8e7e7; */
+  /* background-color:rgba(250, 212, 212, 0.9); */
+  /* background-color:rgba(169, 247, 217, 0.9); */
+  /* background-color:rgba(196, 248, 228, 0.9); */
+  background: linear-gradient(90deg, rgba(196,248,228,0.9) 63%, #FBFDFA 99%) no-repeat 100% 50% / 100% 100%;
+  /* background-color:rgba(240, 212, 212, 0.9); */
+  height: 700px;
+  width:45%;
+  position: absolute;
+  top:-100px;
+  left:0;
+  z-index: -1;
+}
+/*=========セクション②アバウトアス===========*/
+.aboutus .contents{
+  width: 100%;
+  display:flex;
+  margin: 0 auto;
+  align-items: center;
+  /* background-color:pink; */
+  justify-content: space-between;
+}
+.aboutus .content{
+  font-family:Shimanami,sans-serif;
+  letter-spacing: 0.2rem;
+  /* background-color: rgba(196, 248, 228, 0.9); */
+  width:48%;
+}
+.aboutus h2{
+  margin-bottom:50px;
+  text-align: center;
+}
+.aboutus figure img{
+  border-radius: 15%;
+}
+.aboutus .contents figure{
+  width: 50%;
+  /* background-color: royalblue; */
+
+}
+/*=========セクション③メニュー==========*/
+/*
+.menu{
+  align-items: center;
+  width:100%;
+}
+.menu h2{
+  text-align: center;
+  margin-bottom: 60px;
+}
+.menu ul{
+  display: flex;
+  justify-content: space-between;
+  width:1400px;
+
+}
+.menu img{
+  width: 400px;
+  height:400px;
+  object-fit: cover;
+}
+.menu::before{
+  content: '';
+  background: #e8e7e7;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  z-index: -1; */
+
+/* ************************ */
+.menu{
+  align-items: center;
+  width:100%;
+  position: relative;
+}
+.menu h2{
+  text-align: center;
+  margin-bottom: 60px;
+  padding-top: 20px;
+}
+.menu h3,p{
+  font-family:Shimanami,sans-serif;
+  letter-spacing: 0.2rem;
+}
+.menu ul{
+  display: flex;
+  justify-content: space-between;
+  width:1400px;
+  /* margin: 0 auto; */
+}
+.menu img{
+  width: 400px;
+  height:400px;
+  object-fit: cover;
+}
+.menu ul li {
+  width: 400px;
+  margin:0 auto;
+  /* ↑なんかここに書いたら幅いい感じになったけどULに書くべき？ */
+}
+.menu ul li figure {
+  margin: 0;
+}
+
+.menu::before{
+  content: '';
+  background: linear-gradient(177deg, rgba(196,248,228,0.9) 58%, #FBFDFA 98%) no-repeat 100% 50% / 100% 100%, linear-gradient(158deg, rgba(196,248,228,0.9) 37%, #FBFDFA 76%) no-repeat 100% 50% / 100% 100%, linear-gradient(90deg, rgba(196,248,228,0.9) 63%, #FBFDFA 99%) no-repeat 100% 50% / 100% 100%;
+  /* background: #e8e7e7; */
+  /* background: linear-gradient(100deg, #2BB8C7 0%, #F6D8F5 96%) no-repeat 66% 30% / 100% 100%; */
+  /* background:linear-gradient(#F89174, #FFC778); */
+  /* background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%); */
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+
+}
+
+/* ********************* */
+/* .menu{
+  width: 100%;
+  padding-top:40px;
+  position: relative;
+}
+
+.menu::before {
+  content: '';
+  background: #e8e7e7;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+}
+
+.menu h2 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.menu ul li {
+  width: 400px;
+}
+
+.menu ul li figure {
+  margin: 0;
+}  */
+
+/*=========セクション④ニュース==========*/
+.news .content-wrapper{
+  margin-bottom: 180px;
+}
+.news h2{
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.news ul{
+  width:1200px;
+  margin:0 auto;
+  /* background-color: slateblue; */
+
+}
+.news ul li{
+  border-bottom: dotted 1px #dedede;
+  line-height:4;
+  font-family:Shimanami,sans-serif;
+  letter-spacing: 0.2rem;
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+}
+.news li a:hover{
+  opacity:0.6;
+}
+.news li a {
+  color:#333333;
+  }
+  .news li time{
+    font-size:0.75;
+    color: #949494;
+    margin-right:80px;
+  }
+
+/*=========セクション⑤予約==========*/
+.reservation{
+  position:relative;
+  /* background-color: rosybrown; */
+
+}
+.reservation img{
+  width:80%;
+  height:400px;
+  margin-right:20%;
+  object-fit: cover;
+}
+.reservation h1 a{
+  position: absolute;
+  top:45%;
+  right: 52%;
+  width: 250px;
+  height: 60px;
+  background-color: rgba(255,255,255,0.6);
+  line-height: 60px;
+  text-align: center;
+}
+/*
+.bg2{
+  position: absolute;
+  top: -20%;
+  right:0;
+  background: linear-gradient(270deg, rgba(196,248,228,0.9) 66%, #FCFDFC 100%) no-repeat 50% 50% / 100% 100%;
+  width:45%;
+  height:400px;
+  z-index:-1;
+} */
+.reservation::before{
+  content: '';
+  background: linear-gradient(270deg, rgba(196,248,228,0.9) 66%, #FCFDFC 100%) no-repeat 50% 50% / 100% 100%;
+  position: absolute;
+  top: -20%;
+  right:0;
+  width: 45%;
+  height: 400px;
+  z-index: -1;
+
+}
+
+
+
+
+.reservation .content-wrapper::after{
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top:0;
+  left: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/*
+  top:50%;
+  left:50%;
+  font-size: 3rem;
+  padding: 1rem;
+  background-color: rgba(255,255,255,0.6); */
+
+/*=========セクションフッター==========*/
+footer ul{
+  display: flex;
+}
+footer ul li{
+  margin-right: 50px;
+}
+.adress{
+  /* margin-right: auto; */
+  /* background-color: turquoise; */
+  width:62%;
+}
+.adressja{
+  font-family:Shimanami,sans-serif;
+  letter-spacing: 0.2rem;
+}
+footer .content-wrsapper{
+  /* background-color: thistle; */
+  display: flex;
+  align-items: center;
+  margin-bottom:80px;
+}
+.footer-nav{
+  /* text-align: right; */
+  width: 38%;
+  /* margin-left: auto; */
+  /* background-color: yellow; */
+  height: 32px;
+}
+.copy-lights{
+  text-align: center;
+  /* font-weight: normal; */
+  line-height: 4rem;
+  background-color:#e8e7e7;;
+  color: white;
+}
+footer h1{
+  font-family:Snell Roundhand,sans-serif;
+}
+
+footer h1 span{
+  font-family:Champignon,Snell Roundhand,sans-serif;
+  font-size: 3rem;
+}
+/*
+↓くりのすけさんの見本（％ではなくjustify-content使ってるからこっちの方がいい
+footer .content-wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 50px 0;
+}
+
+.address p {
+   line-height: 1.8;
+}
+
+footer ul {
+   display: flex;
+}
+
+footer ul li {
+   margin-right: 50px;
+}
+
+
+.copylight p {
+   text-align: center;
+   font-size: 0.75rem;
+   margin: 0;
+   line-height: 100px;
+   color: #333;
+   background-color: #e8e7e7;
+} */
